@@ -40,7 +40,7 @@ if uploaded_file:
                                        df['SO_SEQ_NO'].astype(str) + '|' + 
                                        df['PO_LINE_REL'].astype(str) + '|' + 
                                        df['LINE_ITEM_NO'].astype(str))
-            df_output['REQ DATE'] = today
+            df_output['REQ DATE'] = today.strftime('%m/%d/%Y')
             df_output['Total'] = df['REQ_QTY']
             df_output['New PO #'] = df['LOC_ORDER_NO']
             
